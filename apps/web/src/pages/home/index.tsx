@@ -1,16 +1,16 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { Layout } from "ui";
+import { Card, Layout } from "ui";
 
 export default function Home() {
-  const navigate = useNavigate();
-  useEffect(() => {
-    if (location.pathname === "/") {
-      navigate("/system");
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (location.pathname === "/") {
+  //     navigate("/system");
+  //   }
+  // }, []);
   return (
     <Layout>
+      <Card>123</Card>
       <div id="app"></div>
     </Layout>
   );
